@@ -36,7 +36,7 @@ end
 namespace :db do 
   desc 'migrate changes to your database' 
   task :migrate => :environment do
-    #That line creates a task dependency. See the env
+    #That line creates a task dependency. See the line requiring the environment file at the top of this code. This line is necessary.
     Student.create_table
   end
 

@@ -2,6 +2,8 @@ task :environment do
   require_relative './config/environment'
 end
 
+#It is possible to namespace your Rake tasks. What does "namespace" mean? A namespace is really just a way to group or contain something, in this case our Rake tasks.
+
 desc 'outputs hello to the terminal'
 namespace :greeting do 
   task :hello do 

@@ -4,6 +4,14 @@ end
 
 #It is possible to namespace your Rake tasks. What does "namespace" mean? A namespace is really just a way to group or contain something, in this case our Rake tasks.
 
+#Now, to use either of our Rake tasks, we use the following syntax:
+
+#rake greeting:hello
+#hello from Rake!
+ 
+#rake greeting:hola
+#hola de Rake!
+
 desc 'outputs hello to the terminal'
 namespace :greeting do 
   task :hello do 

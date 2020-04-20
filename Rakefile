@@ -24,6 +24,14 @@ namespace :greeting do
   end
 end
 
+#One common pattern you'll soon become familiar with is the pattern of writing code that creates database tables and then "migrating" that code using a rake task.
+
+#Our Student class currently has a #create_table method, so let's use that method to build out our own migrate Rake task.
+
+#We'll namespace this task under the db heading. This namespace will contain a few common database-related tasks.
+
+#We'll call this task migrate, because it is a convention to say we are "migrating" our database by applying SQL statements that alter that database.
+
 
 namespace :db do 
   desc 'migrate changes to your database' 
